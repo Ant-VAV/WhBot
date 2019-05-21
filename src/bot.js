@@ -1,6 +1,6 @@
 'use strict';
 const Telegraf = require('telegraf');
-const tips = require('./tips.js').tips;
+const tip = require('./tips.js').getTip;
 // const config = require('../config/config');
 
 const bot = new Telegraf(process.env.TOKEN);
@@ -14,5 +14,5 @@ bot.start((ctx) => ctx.reply('Welcome!'));
 bot.help((ctx) => ctx.reply('Send me a sticker'));
 bot.on('sticker', (ctx) => ctx.reply('👍'));
 bot.hears('hi', (ctx) => ctx.reply('Hey there'));
-bot.hears('help', (ctx) => ctx.reply(tips[Math.random() * tips.length]));
+bot.hears(['help', 'Help'], (ctx) => ctx.reply(tip()));
 bot.launch();

@@ -1,0 +1,15 @@
+{
+  "name": "whbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/bot.js"
+  },
+  "author": "Ant-VAV",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.29.0"
+  }
+}

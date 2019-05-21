@@ -1,8 +1,8 @@
 'use strict';
 const Telegraf = require('telegraf');
-const config = require('../config/config');
+// const config = require('../config/config');
 
-const bot = new Telegraf(process.env.BotToken);
+const bot = new Telegraf(process.env.TOKEN);
 
 bot.command('oldschool', (ctx) => ctx.reply('Hello'));
 bot.command('modern', ({reply}) => reply('Yo'));

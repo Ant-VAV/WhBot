@@ -1,9 +1,9 @@
 'use strict';
 const Telegraf = require('telegraf');
 const tip = require('./tips.js').getTip;
-// const config = require('../config/config');
+const config = require('../config/config');
 
-const bot = new Telegraf(process.env.TOKEN);
+const bot = new Telegraf(process.env.TOKEN || config.BotToken);
 
 // bot.command('oldschool', (ctx) => ctx.reply('Hello'));
 // bot.command('modern', ({reply}) => reply('Yo'));

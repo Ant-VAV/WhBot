@@ -11,6 +11,7 @@
   "author": "Ant-VAV",
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^3.3.3",
     "telegraf": "^3.29.0"
   }
 }
